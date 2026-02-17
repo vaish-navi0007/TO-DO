@@ -15,11 +15,12 @@ This project demonstrates CRUD operations and frontend-backend integration using
 - Spring Data JPA
 - H2 In-Memory Database
 - Maven
+- Runs on: **http://localhost:8081**
 
 ### 🔹 Frontend
 - React
 - Axios
-- Functional Components + Hooks
+- Runs on: **http://localhost:3000**
 
 ---
 
@@ -31,7 +32,7 @@ This project demonstrates CRUD operations and frontend-backend integration using
 -  Delete todo
 -  Real-time updates
 -  In-memory H2 database
--  Backend runs on Port 8081
+-
 
 ---
 
@@ -48,18 +49,17 @@ H2 Database (In-Memory)
 ## 📂 Project Structure
 
 todo-backend/
-├── src/main/java/com/example/todo/
-│ ├── controller/
-│ ├── model/
-│ ├── repository/
-│ └── TodoApplication.java
-└── src/main/resources/
-└── application.properties
+ ├── controller/
+ ├── model/
+ ├── repository/
+ ├── TodoApplication.java
+ └── application.properties
 
 todo-frontend/
-├── src/
-├── public/
-└── package.json
+ ├── src/
+ │    ├── App.js
+ │    └── index.js
+ └── package.json
 
 
 ---
@@ -68,13 +68,15 @@ todo-frontend/
 
 ---
 
-#Backend:
+Backend:
 
 mvn clean install
-mvn spring-boot:run
----
 
-#Frontend:
+mvn spring-boot:run
+
+
+Frontend:
 
 npm install
+
 npm start
