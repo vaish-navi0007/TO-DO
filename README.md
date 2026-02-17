@@ -68,15 +68,21 @@ todo-frontend/
 
 ---
 
-Backend:
+## Backend:
 
 mvn clean install
 
 mvn spring-boot:run
 
 
-Frontend:
+## Frontend:
 
 npm install
 
 npm start
+
+---
+
+  ## screenshot:
+
+<img width="1389" height="803" alt="Image" src="https://github.com/user-attachments/assets/0dfa4c16-de55-45ec-8d9a-34492782dab0" />
